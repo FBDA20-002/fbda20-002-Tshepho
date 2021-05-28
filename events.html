@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CAPE TOWN</title>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="open">
+			<div class="layer"></div>
+			<div class="layer"></div>
+		</div>
+		<section>
+			<div class="header">
+				<h2 class="logo">CAPE TOWN</h2>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="aboutus.html">About</a>
+					</li>
+					<li>
+						<a href="lifestyle.html" >Lifestyle</a>
+					</li>
+					<li>
+						<a href="#" class="active">Events</a>
+					</li>
+					<li>
+						<a href="connectwithus.html">Connect with us</a>
+					</li>
+				</ul>
+			</div>
+			<div class="bannerText">
+			
+				<h3>EVENTS IN CAPE TOWN</h3>
+				<p>
+					 Even though we’re heading into the colder months of the year in Cape Town, the city’s events calendar is still as hot as ever. Here are our top picks for this month so mark them down in your calendar, get your hands on tickets, and get ready to have great time!
+				</p>
+			</div>
+			<img src="./images/life.jpg" class="bulb">
+			<ul class="sci">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+			<div class="element2"></div>
+		</section>
+	</body>
+	<footer>
+    <a href="more.html" class="btn color-02">
+      <span>MORE EVENTS</span>
+    </a>
+
+    <script type="text/javascript">
+    const btns = document.querySelectorAll(".btn");
+
+    btns.forEach((btn) => {
+      btn.addEventListener("mousemove", function(e){
+        const position = btn.getBoundingClientRect();
+        const x = e.pageX - position.left - position.width / 2;
+        const y = e.pageY - position.top - position.height / 2;
+
+        btn.children[0].style.transform = "translate(" + x * 0.3 + "px, " + y * 0.5 + "px)";
+      });
+    });
+
+    btns.forEach((btn) => {
+      btn.addEventListener("mouseout", function(e){
+        btn.children[0].style.transform = "translate(0px, 0px)";
+      });
+    });
+</script>
+</footer>
+</html>

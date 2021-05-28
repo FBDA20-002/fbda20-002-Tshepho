@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CAPE TOWN</title>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="open">
+			<div class="layer"></div>
+			<div class="layer"></div>
+		</div>
+		<section>
+			<div class="header">
+				<h2 class="logo">CAPE TOWN</h2>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="aboutus.html">About</a>
+					</li>
+					<li>
+						<a href="#" class="active">Lifestyle</a>
+					</li>
+					<li>
+						<a href="events.html">Events</a>
+					</li>
+					<li>
+						<a href="connectwithus.html">Connect with us</a>
+					</li>
+				</ul>
+			</div>
+			<div class="bannerText">
+			
+				<h3>LIFESTYLE IN CAPE TOWN</h3>
+				<p>
+					  Cape Town is a city that inspires and enthrals. From dramatic scenic beauty to a rich cultural diversity and exhilarating activities on offer; the city offers a lifestyle unparalleled to any other.
+
+You can swim with penguins, climb mountains, sample award-winning wines, and enjoy world-class infrastructure. What’s more, the city has restaurants to delight every taste, art galleries, theatres and museums, and so much great music.
+
+There are events and festivals year-round, and Africa comes here to meet and cement trade deals. Cape Town is the city you can Visit, Live, Work, Study, Play and Invest
+				</p>
+			</div>
+			<img src="./images/life.jpg" class="bulb">
+			<ul class="sci">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+			<div class="element2"></div>
+		</section>
+	</body>
+	<footer>
+		<a href="heritage.html" class="btn color-01">
+      <span>heritage sites</span>
+    </a>
+    <a href="natural.html" class="btn color-02">
+      <span>Natural Sites</span>
+    </a>
+
+    <script type="text/javascript">
+    const btns = document.querySelectorAll(".btn");
+
+    btns.forEach((btn) => {
+      btn.addEventListener("mousemove", function(e){
+        const position = btn.getBoundingClientRect();
+        const x = e.pageX - position.left - position.width / 2;
+        const y = e.pageY - position.top - position.height / 2;
+
+        btn.children[0].style.transform = "translate(" + x * 0.3 + "px, " + y * 0.5 + "px)";
+      });
+    });
+
+    btns.forEach((btn) => {
+      btn.addEventListener("mouseout", function(e){
+        btn.children[0].style.transform = "translate(0px, 0px)";
+      });
+    });
+</script>
+</footer>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CAPE TOWN</title>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="aboutus.css">
+	</head>
+	<body>
+		<div class="open">
+			<div class="layer"></div>
+			<div class="layer"></div>
+		</div>
+		<section>
+			<div class="header">
+				<h2 class="logo">CAPE TOWN</h2>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="#" class="active">About</a>
+					</li>
+					<li>
+						<a href="lifestyle.html">Lifestyle</a>
+					</li>
+					<li>
+						<a href="events.html">Events</a>
+					</li>
+					<li>
+						<a href="connectwithus.html">Connect with us</a>
+					</li>
+				</ul>
+			</div>
+			<div class="bannerText">
+			
+				<h3>"ABOUT US"</h3>
+				<p>
+					  Cape Town is a port city on South Africa’s southwest coast, on a peninsula beneath the imposing Table Mountain. Slowly rotating cable cars climb to the mountain’s flat top, from which there are sweeping views of the city, the busy harbor and boats heading for Robben Island, the notorious prison that once held Nelson Mandela, which is now a living museum.
+					  Cape Town is home to a number of different languages, and thanks to all the foreigners living in the Cape, while walking down the street you will hear a multitude of foreign languages as well.Because of the rich cultural history, Cape Town is now not only home to English, Afrikaans, and Xhosa but to a large Dutch, French, German and Portuguese community. Other nationalities, such as Asians, Italians and Russians have made Cape Town their home too. Now, in post-Apartheid South Africa, the democratic constitution recognises 11 official languages as part of South Africa’s cultural heritage. This decision was made to elevate and advance the indigenous tongues of the country that were previously suppressed. Today, the majority of South Africans – and Capetonians in general – are able to speak more than one language, and may switch between languages during a conversation.
+				</p>
+			</div>
+			<img src="./images/loc.jpg" class="nepe">
+			<ul class="sci">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+		
+			<div class="element2"></div>
+    
+		</section>
+	</body>
+	<footer>
+    <a href="facts.html" class="btn color-02">
+      <span>FACTS ABOUT US</span>
+    </a>
+
+    <script type="text/javascript">
+    const btns = document.querySelectorAll(".btn");
+
+    btns.forEach((btn) => {
+      btn.addEventListener("mousemove", function(e){
+        const position = btn.getBoundingClientRect();
+        const x = e.pageX - position.left - position.width / 2;
+        const y = e.pageY - position.top - position.height / 2;
+
+        btn.children[0].style.transform = "translate(" + x * 0.3 + "px, " + y * 0.5 + "px)";
+      });
+    });
+
+    btns.forEach((btn) => {
+      btn.addEventListener("mouseout", function(e){
+        btn.children[0].style.transform = "translate(0px, 0px)";
+      });
+    });
+</script>
+</footer>
+</html>
